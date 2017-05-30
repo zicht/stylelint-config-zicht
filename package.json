@@ -1,0 +1,26 @@
+{
+  "name": "stylelint-config-zicht",
+  "version": "0.1.0",
+  "description": "Shareable stylelint configuration for Zicht projects",
+  "main": "index.js",
+  "keywords": [
+    "stylelint",
+    "stylelint-config"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zicht/stylelint-config-zicht.git"
+  },
+  "author": "Zicht Online",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zicht/stylelint-config-zicht/issues"
+  },
+  "homepage": "https://github.com/zicht/stylelint-config-zicht#readme",
+  "devDependencies": {
+    "stylelint": "^7.10.1"
+  },
+  "dependencies": {
+    "stylelint-scss": "^1.4.4"
+  }
+}
