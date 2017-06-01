@@ -11,25 +11,35 @@ module.exports = {
                 "first-nested"
             ],
             ignore: ["after-comment"],
-            ignoreAtRules: ["mixin"]
+            ignoreAtRules: ["mixin", "else"]
         }],
         "at-rule-name-case": "lower",
         "at-rule-name-newline-after": "always-multi-line",
-        "at-rule-name-space-after": "always",
+        "at-rule-name-space-after": "always-single-line",
         "at-rule-no-unknown": [true, {
             ignoreAtRules: [
-                "include",
+                "at-root",
+                "content",
                 "each",
-                "if",
                 "else",
-                "mixin"
+                "error",
+                "for",
+                "function",
+                "if",
+                "include",
+                "mixin",
+                "return",
+                "warn",
+                "while"
             ]
         }],
         "at-rule-no-vendor-prefix": true,
         "at-rule-semicolon-newline-after": "always",
         "at-rule-semicolon-space-before": "never",
         "block-closing-brace-empty-line-before": "never",
-        "block-closing-brace-newline-after": "always",
+        "block-closing-brace-newline-after": ["always", {
+            ignoreAtRules: ["if", "else"]
+        }],
         "block-closing-brace-newline-before": "always-multi-line",
         "block-closing-brace-space-before": "always-single-line",
         "block-no-empty": true,
@@ -66,7 +76,9 @@ module.exports = {
         "declaration-colon-newline-after": "always-multi-line",
         "declaration-colon-space-after": "always-single-line",
         "declaration-colon-space-before": "never",
-        "declaration-empty-line-before": "never",
+        "declaration-empty-line-before": ["always", {
+            except: ["after-comment", "after-declaration", "first-nested"]
+        }],
         "declaration-no-important": true,
         "declaration-property-unit-blacklist": {
             "/^animation/": ["s"]
@@ -99,7 +111,9 @@ module.exports = {
         "length-zero-no-unit": true,
         "max-empty-lines": 3,
         "max-line-length": 100,
-        "max-nesting-depth": 2,
+        "max-nesting-depth": [2, {
+            ignore: ["blockless-at-rules"]
+        }],
         "media-feature-colon-space-after": "always",
         "media-feature-colon-space-before": "never",
         "media-feature-name-case": "lower",
@@ -121,7 +135,7 @@ module.exports = {
         "no-missing-end-of-source-newline": true,
         "no-unknown-animations": true,
         "number-leading-zero": "always",
-        "number-max-precision": 2,
+        "number-max-precision": 3,
         "number-no-trailing-zeros": true,
         "property-case": "lower",
         "property-no-unknown": true,
@@ -159,7 +173,6 @@ module.exports = {
         "selector-type-case": "lower",
         "selector-type-no-unknown": true,
         "shorthand-property-no-redundant-values": true,
-        "string-no-newline": true,
         "string-quotes": "double",
         "time-min-milliseconds": 100,
         "unit-case": "lower",
@@ -171,6 +184,8 @@ module.exports = {
         "value-list-comma-space-before": "never",
         "value-list-max-empty-lines": 0,
         "value-no-vendor-prefix": true,
+        "scss/at-else-closing-brace-newline-after": "always-last-in-chain",
+        "scss/at-if-closing-brace-newline-after": "always-last-in-chain",
         "scss/at-import-no-partial-leading-underscore": true,
         "scss/at-mixin-argumentless-call-parentheses": "never",
         "scss/dollar-variable-colon-space-after": "always-single-line",
