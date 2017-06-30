@@ -106,7 +106,7 @@ module.exports = {
         "function-url-no-scheme-relative": true,
         "function-url-quotes": ["always", {
             except: ["empty"]
-        }],,
+        }],
         "function-whitespace-after": "always",
         "indentation": 4,
         "keyframe-declaration-no-important": true,
