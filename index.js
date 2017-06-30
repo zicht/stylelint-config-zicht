@@ -104,7 +104,9 @@ module.exports = {
         "function-parentheses-space-inside": "never-single-line",
         "function-url-data-uris": "never",
         "function-url-no-scheme-relative": true,
-        "function-url-quotes": "never",
+        "function-url-quotes": ["always", {
+            except: ["empty"]
+        }],,
         "function-whitespace-after": "always",
         "indentation": 4,
         "keyframe-declaration-no-important": true,
