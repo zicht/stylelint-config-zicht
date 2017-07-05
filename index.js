@@ -48,13 +48,15 @@ module.exports = {
         "block-opening-brace-space-before": "always",
         "color-hex-case": "lower",
         "color-hex-length": "short",
-        "color-named": "never",
+        "color-named": ["never", {
+            ignore: ["inside-function"]
+        }],
         "color-no-hex": true,
         "color-no-invalid-hex": true,
         "comment-empty-line-before": [ "always", {
             except: ["first-nested"],
-            ignore: ["stylelint-commands"],
-        } ],
+            ignore: ["stylelint-commands"]
+        }],
         "comment-no-empty": true,
         "comment-whitespace-inside": "always",
         "comment-word-blacklist": ["/^TODO:/"],
@@ -88,7 +90,7 @@ module.exports = {
         "declaration-property-value-whitelist": {
             "background-color": ["/get-color/"],
             "border-color": ["/get-color/"],
-            "color": ["/get-color/"],
+            "color": ["/get-color/"]
         },
         "font-family-name-quotes": "always-where-recommended",
         "font-family-no-duplicate-names": true,
