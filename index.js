@@ -114,7 +114,6 @@ module.exports = {
         "keyframe-declaration-no-important": true,
         "length-zero-no-unit": true,
         "max-empty-lines": 3,
-        "max-line-length": 100,
         "max-nesting-depth": [2, {
             ignore: ["blockless-at-rules"]
         }],
