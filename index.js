@@ -161,7 +161,7 @@ module.exports = {
         "selector-max-empty-lines": 0,
         "selector-max-compound-selectors": 2,
         "selector-no-attribute": true,
-        "selector-no-combinator": true,
+        "selector-max-combinators": 1,
         "selector-no-id": true,
         "selector-no-qualifying-type": true,
         "selector-no-type": true,
