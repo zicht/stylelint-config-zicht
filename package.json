@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-zicht",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Shareable stylelint configuration for projects by Zicht.nl",
   "main": "index.js",
   "keywords": [
@@ -17,10 +17,8 @@
     "url": "https://github.com/zicht/stylelint-config-zicht/issues"
   },
   "homepage": "https://github.com/zicht/stylelint-config-zicht#readme",
-  "devDependencies": {
-    "stylelint": "~8.0.0"
-  },
   "dependencies": {
+    "stylelint": "~8.0.0",
     "stylelint-scss": "~2.0.1"
   }
 }
