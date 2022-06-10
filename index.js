@@ -124,7 +124,9 @@ module.exports = {
         "number-max-precision": 3,
         "number-no-trailing-zeros": true,
         "property-case": "lower",
-        "property-no-unknown": true,
+        "property-no-unknown": [true, {
+            ignoreProperties: ['text-decoration-skip-ink']
+        }],
         "property-no-vendor-prefix": true,
         "rule-empty-line-before": ["always-multi-line", {
             except: ["first-nested"],
