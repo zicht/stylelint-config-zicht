@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-zicht",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Shareable stylelint configuration for projects by Zicht.nl",
   "main": "index.js",
   "keywords": [
